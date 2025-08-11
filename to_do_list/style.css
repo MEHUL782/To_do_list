@@ -1,0 +1,82 @@
+/* Simple styling with some personal tweaks */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #74ABE2, #5563DE);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.todo-container {
+    max-width: 500px;
+    background: #fff;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 8px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+}
+
+#addBtn {
+    background-color: #5563DE;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#addBtn:hover {
+    background-color: #4350b5;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    background: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 6px;
+}
+
+li.completed span {
+    text-decoration: line-through;
+    color: gray;
+}
+
+button.edit, button.delete {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+@media (max-width: 600px) {
+    .todo-container {
+        margin: 20px;
+        padding: 15px;
+    }
+}
